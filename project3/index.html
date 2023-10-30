@@ -10,19 +10,30 @@
             background-color: #252525;
             color:#fff;
         }
-        
+        .mainDiv{
+            position:absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            margin:auto;
+            transform: translate(-50%,-50%);
+        }
     </style>
 </head>
 
 <body>
-    <main>
-        <h1>Counter</h1>
-        <h2 class="count">0</h2>
-        <button class="button" id="decrease">DECREASE</button>
-        <button class="button" id="reset">RESET</button>
-        <button class="button" id="increase">INCREASE</button>
-
-    </main>
+    <div class="mainDiv">
+        <main>
+            <h1>Counter</h1>
+            <h2 class="count">0</h2>
+            <button class="button" id="decrease">DECREASE</button>
+            <button class="button" id="reset">RESET</button>
+            <button class="button" id="increase">INCREASE</button>
+    
+        </main>
+    </div>
+    
+    
 </body>
 <script src="scriptCounter.js"></script>
 </html>
