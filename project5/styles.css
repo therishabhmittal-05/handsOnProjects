@@ -13,6 +13,7 @@ html,body{
 body{
     background-color: rgb(66, 66, 66);
     color:#fff;
+    font-family: "Poppins", sans-serif;
 }
 /* :root defines the variable name and --writes the variable name */
 :root{
@@ -28,7 +29,20 @@ section{
     padding: 5%
 }
 .links{
-    display:none;
+    position: absolute;
+    background-color: #fff;
+    width:100%;
+    height: 100vh;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links a{
+    color: var(--sec-color);
+    font-size: 2rem;;
 }
 h3{
     font-size:1.25rem;
@@ -102,4 +116,40 @@ nav svg{
     z-index: -1;
     object-fit:cover;
 }
-
+.classes{
+    color: var(--sec-color);
+    text-align:center;
+    font-family: "argonite", sans-serif;
+}
+.videos video{
+    width:100%;
+    border-radius: 1rem;
+    margin-top:1rem;
+}
+.meditation, .yoga, .pilates{
+    position: relative;
+}
+.videos h3{
+    position: absolute;
+    color: var(--main-color);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.49);
+    bottom: 10%;
+    left:50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+}
+.about{
+    color: var(--sec-color);
+}
+.about h2{
+    font-family: "argonite", sans-serif;
+    text-align:center;
+}
+.about p{
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+.about img{
+    width:100%;
+    margin-top: 2rem;
+}
